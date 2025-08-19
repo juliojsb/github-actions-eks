@@ -11,6 +11,7 @@ env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   deploy:
+    environment: eks
     name: Deploy
     runs-on: ubuntu-latest
     steps:
